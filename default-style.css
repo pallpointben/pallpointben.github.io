@@ -1,0 +1,26 @@
+body { 
+	background-color: #66D1D8; 
+	font-family: Verdana;
+}
+
+.header { 
+	background-color: #3A47C4;
+	text-align: center;
+	float: left;
+	width: 100%;
+	margin-bottom: 40px;
+	color: #D9E4C3;
+
+ }
+
+.main {
+	background-color: #46BE60;
+}
+
+.section {
+	margin-left: 80px;
+}
+
+h2 {
+	margin-left: -40px;
+}
