@@ -13,7 +13,8 @@ function menuPreload () {
 function menuCreate () {
     var background = game.add.sprite(0,0,'background');
     var weaponsJSON = game.cache.getJSON('weaponslist');
-    var play_button = new myButton(game, 'button1', boundsX/2, boundsY/4, 200, 200, 'Play Game');
+    var titletext = game.add.text(game, boundsX/2, boundsY/8, 'BRAWLISEUM', {fontSize:30});
+    var play_button = new myButton(game, 'button1', boundsX/2, boundsY/4, 200, 175, 'Play Game');
     var description_window = new myButton(game, 'frame', boundsX/2, boundsY*3/4, boundsX*3/4, 200, 'Select a weapon.');
     play_button.events.onInputDown.add(playButtonClicked, play_button);
   //  var weaponbuttons = [];

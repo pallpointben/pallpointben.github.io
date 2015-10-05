@@ -54,6 +54,16 @@ body {
 	margin-left: 70px;
 }
 
+.pub {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.page-header {
+	text-align: center;
+	color: #653e1d;
+}
+
 h1 {
 	font-family: "Arial Black";
 	color: #653e1d;
