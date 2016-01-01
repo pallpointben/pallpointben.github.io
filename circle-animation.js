@@ -1,6 +1,6 @@
 var canvas;
 var ctx;
-var time = 0;
+var time;
 var circle1 = new Object();
 var circle1t = new Object();
 var circle2 = new Object();
@@ -12,38 +12,57 @@ var littler = bigr*1.618;
 var textr = bigr * 1.8;
 var slowness = 100;
 var interval = 0;
-var myTimer;
+var spinTimer;
+var spinning = false;
+var entered = false;
 
+
+function enter() {
+	if (!entered) {
+		$("#circle-animation").animate({zoom:.2}, 3000, 
+			function() {
+				entered = true;
+				$(".name").animate({opacity:1}, 3000);
+			});
+	}
+}
 
 function init() {
+	time = 0;
 	canvas = document.getElementById('circle-animation');
 	if (canvas.getContext) {
 		ctx = canvas.getContext('2d');
-		ctx.translate(canvas.width/2, canvas.height/2);
+		ctx.translate(canvas.width/2, canvas.height*3/5);
 	}
-	loop();
+	spinTimer = setInterval(loop, 30);
 }
 
 function run() {
-	myTimer = setInterval(loop, 30);
+	spinning = true;
 }
 
 function stop() {
-	clearInterval(myTimer);
+	spinning = false;
 }
 
 function loop() {
+	if (spinning) {
+		spin();
+	}
 	update();
 	canvas.width = canvas.width;
 	ctx.translate(canvas.width/2, canvas.height/2);
 	render();
 }
 
+function spin() {
+	time++;
+}
+
 function update() {
+	var t = time/slowness + Math.PI/6;
 	// update circle centers
 
-	time++;
-	t = time/slowness;
 	circle1.x = bigr * Math.cos(t);
 	circle1.y = bigr * Math.sin(t);
 
@@ -65,22 +84,40 @@ function update() {
 function render() {
 	// draw new circles
 	//clearstuff();
+
+	ctx.globalAlpha = .66;
+	ctx.beginPath();
 	ctx.moveTo(circle1.x+littler,circle1.y);
 	ctx.arc(circle1.x, circle1.y, littler, 0, Math.PI*2);
+	ctx.stroke();
+	ctx.fillStyle = '#225378';
+	ctx.fill();
+	ctx.beginPath();
 	ctx.moveTo(circle2.x+littler,circle2.y);
 	ctx.arc(circle2.x, circle2.y, littler, 0, Math.PI*2);
+	ctx.stroke();
+	ctx.fillStyle = '#1695A3';
+	ctx.fill();
+	ctx.beginPath();
 	ctx.moveTo(circle3.x+littler,circle3.y);
 	ctx.arc(circle3.x, circle3.y, littler, 0, Math.PI*2);
 	ctx.stroke();
+	ctx.fillStyle = '#43A7C2';
+	ctx.fill();
+	ctx.beginPath();
 
-	ctx.textAlign = "center";
-	ctx.font = "30px Dosis";
-	ctx.fillText("Ben Pall", 0, 0);
-	ctx.font = "20px Dosis";
-	ctx.fillText("Web Development", circle1t.x, circle1t.y);
-	ctx.fillText("UX Design", circle2t.x, circle2t.y);
-	ctx.fillText("Game & Puzzle Design", circle3t.x, circle3t.y);
-	ctx
-
+	ctx.globalAlpha = 1;
+	if (!entered) {
+		ctx.textAlign = "center";
+		ctx.fillStyle = '#F3FFE2';
+		ctx.fillStyle = 'white';
+		//ctx.strokeStyle = 'black';
+		ctx.font = "30px Dosis";
+		var enterbutton = ctx.fillText("Ben Pall", 0, 0);
+		ctx.font = "20px Dosis";
+		ctx.fillText("Web Development", circle1t.x, circle1t.y);
+		ctx.fillText("User Experience Design", circle2t.x, circle2t.y);
+		ctx.fillText("Game & Puzzle Design", circle3t.x, circle3t.y);
+	}
 
 }
