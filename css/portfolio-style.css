@@ -1,7 +1,7 @@
-#content-container {
+#heading-container {
 	text-align: center;
 	margin: 15px;
-	border-radius: 20px;
+	border-radius: 2px;
 	border: solid medium;
 }
 
@@ -11,7 +11,61 @@
 
 .name {
 	display:inline;
-	font-size: 100px;
 	font-family: Dosis;
-	opacity:0;
+	opacity: 0;
+}
+
+.heading {
+	display:inline;
+	font-family: Dosis;
+	opacity: 0;
+}
+
+.big {
+	font-size: 100px;
+}
+
+.medium {
+	font-size:35px;
+}
+
+.link {
+	font-weight: bold;
+	color: white;
+}
+
+#content-container {
+	font-size: 18px;
+	margin: 30px;
+}
+
+#footer {
+	font-family: Dosis;
+	font-size: 15px;
+	display: block;
+	text-align: center;
+	width: 100%;
+	background-color: #2F8FAB;
+	padding: 15px;
+	color: white;
+}
+
+.hidden-content {
+	display:none;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+li {
+	display: inline;
+	margin: 2%;
+}
+
+li a {
+	width: 20%;
 }

@@ -19,10 +19,14 @@ var entered = false;
 
 function enter() {
 	if (!entered) {
-		$("#circle-animation").animate({zoom:.2}, 3000, 
+		$("#circle-animation").animate({zoom:.2}, 2000, 
 			function() {
 				entered = true;
-				$(".name").animate({opacity:1}, 3000);
+				$("#bio").css("display", "block");
+				$("#bio-heading").css("text-decoration", "underline");
+				$(".name").animate({opacity:1}, 2000, 
+					function(){$(".heading").animate({opacity:1}, 2000);
+				});
 			});
 	}
 }
