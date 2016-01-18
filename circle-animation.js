@@ -19,7 +19,7 @@ var entered = false;
 
 function enter() {
 	if (!entered) {
-		$("#circle-animation").animate({zoom:.15}, 2000, 
+		$("#circle-animation").animate({zoom:.2}, 2000, 
 			function() {
 				entered = true;
 				$("#circle-animation").css("cursor", "default");
