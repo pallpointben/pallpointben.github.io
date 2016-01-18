@@ -7,6 +7,8 @@
 
 #circle-animation {
 	display:inline;
+	cursor: pointer;
+	zoom: .75;
 }
 
 .name {
@@ -19,6 +21,7 @@
 	display:inline;
 	font-family: Dosis;
 	opacity: 0;
+	cursor: pointer;
 }
 
 .big {
@@ -26,7 +29,7 @@
 }
 
 .medium {
-	font-size:35px;
+	font-size:30px;
 }
 
 .link {
@@ -37,6 +40,8 @@
 #content-container {
 	font-size: 18px;
 	margin: 30px;
+	bottom: 200px;
+	overflow:auto;
 }
 
 #footer {
@@ -48,12 +53,17 @@
 	background-color: #2F8FAB;
 	padding: 15px;
 	color: white;
+	position:fixed;
+	bottom: 0px;
+	border-top: 5px solid black;
 }
 
 .hidden-content {
 	display:none;
 	font-family: Dosis;
+	margin-bottom:100px;
 }
+
 
 ul {
 	list-style-type: none;

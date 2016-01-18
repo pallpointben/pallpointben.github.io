@@ -7,8 +7,8 @@ function navigate(section) {
 
 	// update content
 
-	$(".hidden-content").animate({opacity:0}, 300, function() {
+	$(".hidden-content").animate({opacity:0}, 600, function() {
 		$(".hidden-content").css("display", "none");
-		$(section).css("display", "block").animate({opacity:1}, 300);
+		$(section).css("display", "block").animate({opacity:1}, 600);
 	})
 }
