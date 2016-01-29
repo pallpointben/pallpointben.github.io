@@ -119,6 +119,7 @@ h3 {
 .link {
 	font-weight: bold;
 	color: white;
+	text-decoration: underline;
 }
 
 #content-container {
@@ -185,5 +186,5 @@ h1 {
 }
 
 iframe {
-	border-radius: 5px;
+	border: 5px solid black;
 }
