@@ -2,7 +2,76 @@
 	text-align: center;
 	margin: 15px;
 	border-radius: 2px;
-	border: solid medium;
+	border: 5px solid black;
+	top: 0px;
+}
+
+.reflective {
+	font-style: italic;
+}
+
+.odd {
+	background-color: white;
+}
+
+.even {
+	background-color: #a6a6a6;
+}
+
+.project {
+	padding: 10px;
+	border: 3px solid black;
+}
+
+#ming {
+	zoom: 80%;
+}
+
+.imgcont {
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 2px solid black;
+	margin-left: 20px;
+}
+
+.pdfcont {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.blurb {
+	display: block;
+	width: 800px;
+	margin-top: 50px;
+	margin-right: 50px; 
+	float: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.skills {
+	background-color: #225378;
+	color: white;
+	display: none;
+	padding: 10px;
+	border: 5px solid black;
+	box-shadow: inset 0px 0px 5px black;
+}
+
+.list {
+	display: inline-block;
+	width: 49%;
+}
+
+#me {
+	zoom:.5;
+	border-radius: 50%;
+	border: 3px solid #2F8FAB;
 }
 
 #circle-animation {
@@ -22,6 +91,15 @@
 	font-family: Dosis;
 	opacity: 0;
 	cursor: pointer;
+	color: #225378;
+}
+
+h1 {
+	padding-bottom: 20px;
+}
+
+h3 {
+	color: #225378;
 }
 
 .big {
@@ -29,7 +107,7 @@
 }
 
 .medium {
-	font-size:30px;
+	font-size:25px;
 }
 
 .link {
@@ -61,22 +139,41 @@
 .hidden-content {
 	display:none;
 	font-family: Dosis;
+	font-size: 20px;
 	margin-bottom:100px;
 }
 
+.image {
+	text-align: center;
+}
 
-ul {
+#menu ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	text-align: center;
 }
 
-li {
+#menu li {
 	display: inline;
 	margin: 2%;
 }
 
-li a {
+#menu li {
+	display: inline;
+	margin: 2%;
+}
+
+#menu li a {
 	width: 20%;
+}
+
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+}
+
+.center {
+	float: 50%;
 }

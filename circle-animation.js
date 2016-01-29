@@ -7,7 +7,7 @@ var circle2 = new Object();
 var circle2t = new Object();
 var circle3 = new Object();
 var circle3t = new Object();
-var bigr = 115;
+var bigr = 120;
 var littler = bigr*1.618;
 var textr = bigr * 1.8;
 var slowness = 100;
@@ -16,6 +16,7 @@ var spinTimer;
 var spinning = false;
 var entered = false;
 
+// runs when you click on animation
 
 function enter() {
 	if (!entered) {
@@ -31,6 +32,8 @@ function enter() {
 			});
 	}
 }
+
+//sets up animation
 
 function init() {
 	time = 0;
@@ -95,19 +98,19 @@ function render() {
 	ctx.moveTo(circle1.x+littler,circle1.y);
 	ctx.arc(circle1.x, circle1.y, littler, 0, Math.PI*2);
 	ctx.stroke();
-	ctx.fillStyle = '#225378';
+	ctx.fillStyle = '#225378'; //darkest
 	ctx.fill();
 	ctx.beginPath();
 	ctx.moveTo(circle2.x+littler,circle2.y);
 	ctx.arc(circle2.x, circle2.y, littler, 0, Math.PI*2);
 	ctx.stroke();
-	ctx.fillStyle = '#1695A3';
+	ctx.fillStyle = '#1695A3'; //mediumest
 	ctx.fill();
 	ctx.beginPath();
 	ctx.moveTo(circle3.x+littler,circle3.y);
 	ctx.arc(circle3.x, circle3.y, littler, 0, Math.PI*2);
 	ctx.stroke();
-	ctx.fillStyle = '#43A7C2';
+	ctx.fillStyle = '#43A7C2'; //lightest
 	ctx.fill();
 	ctx.beginPath();
 
@@ -121,7 +124,7 @@ function render() {
 		var enterbutton = ctx.fillText("Ben Pall", 0, 0);
 		ctx.font = "20px Dosis";
 		ctx.fillText("Web Development", circle1t.x, circle1t.y);
-		ctx.fillText("User Experience Design", circle2t.x, circle2t.y);
+		ctx.fillText("Human-Centered Design", circle2t.x, circle2t.y);
 		ctx.fillText("Game & Puzzle Design", circle3t.x, circle3t.y);
 	}
 
