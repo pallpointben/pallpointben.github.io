@@ -20,16 +20,22 @@ var entered = false;
 
 function enter() {
 	if (!entered) {
-		$("#circle-animation").animate({zoom:.2}, 2000, 
+		$("#circle-animation").animate({zoom:.2}, 2000,
 			function() {
 				entered = true;
 				$("#circle-animation").css("cursor", "default");
 				$("#bio").css("display", "block");
+				$("#bio p").css("opacity", "0");
 				$("#bio-heading").css("text-decoration", "underline");
+				$("#footer").animate({opacity:1, bottom: 0}, 4000);
 				$(".name").animate({opacity:1}, 2000, 
-					function(){$(".heading").animate({opacity:1}, 2000);
-				});
-			});
+					function(){
+						$(".heading").animate({opacity:1}, 2000);
+						$("#bio p").animate({opacity:1}, 2000);
+					}
+				);
+			}
+		);
 	}
 }
 
