@@ -104,19 +104,19 @@ function render() {
 	ctx.moveTo(circle1.x+littler,circle1.y);
 	ctx.arc(circle1.x, circle1.y, littler, 0, Math.PI*2);
 	ctx.stroke();
-	ctx.fillStyle = '#225378'; //darkest
+	ctx.fillStyle = '#003399'; //darkest
 	ctx.fill();
 	ctx.beginPath();
 	ctx.moveTo(circle2.x+littler,circle2.y);
 	ctx.arc(circle2.x, circle2.y, littler, 0, Math.PI*2);
 	ctx.stroke();
-	ctx.fillStyle = '#1695A3'; //mediumest
+	ctx.fillStyle = '#0099CC'; //mediumest
 	ctx.fill();
 	ctx.beginPath();
 	ctx.moveTo(circle3.x+littler,circle3.y);
 	ctx.arc(circle3.x, circle3.y, littler, 0, Math.PI*2);
 	ctx.stroke();
-	ctx.fillStyle = '#43A7C2'; //lightest
+	ctx.fillStyle = '#66CCFF'; //lightest
 	ctx.fill();
 	ctx.beginPath();
 

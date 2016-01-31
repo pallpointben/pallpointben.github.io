@@ -1,7 +1,8 @@
 #heading-container {
 	text-align: center;
-	margin: 15px;
+	padding: 15px;
 	top: 0px;
+	background: linear-gradient(#4DB7EB, white);
 }
 
 .reflective {
@@ -10,20 +11,31 @@
 }
 
 .odd {
-	background-color: white;
+	/*background: linear-gradient(#D3F0FF, white);
+	color: black;*/
 }
 
 .even {
-	background-color: white;
+	/*background: linear-gradient(#D3F0FF, white);
+	background: linear-gradient(#B6E2F0, white);*/
+	color: black;
+}
+
+.first {
+	border-top: 1px dotted black;
 }
 
 .project {
 	padding: 20px;
-	margin-bottom: 30px;
-	border: 3px solid black;
+	border-bottom: 1px dotted black;
+	text-align: center;
 }
 
 #ming {
+	zoom: 80%;
+}
+
+#mapchat {
 	zoom: 80%;
 }
 
@@ -39,6 +51,7 @@
 	border-radius: 50%;
 	border: 2px solid black;
 	margin-left: 20px;
+	box-shadow: 0px 0px 10px #888;
 }
 
 .pdfcont {
@@ -47,10 +60,11 @@
 }
 
 .blurb {
-	display: block;
-	width: 800px;
-	float: right;
+	text-align: left;
+	padding: 15px;
 }
+
+
 
 .center {
 	text-align: center;
@@ -94,15 +108,16 @@
 	font-family: Dosis;
 	opacity: 0;
 	cursor: pointer;
-	color: #225378;
+	color: #003399;
 }
 
 h1 {
 	padding-bottom: 20px;
 }
 
-h3 {
+h2 {
 	color: #225378;
+	font-weight: bold;
 }
 
 .big {
@@ -121,7 +136,7 @@ h3 {
 
 #content-container {
 	font-size: 18px;
-	margin: 30px;
+	margin-top: 30px;
 	bottom: 200px;
 	overflow:auto;
 }
@@ -132,24 +147,31 @@ h3 {
 	display: block;
 	text-align: center;
 	width: 100%;
-	background-color: #2F8FAB;
+	background-color: #4DB7EB;
 	padding: 15px;
 	color: white;
 	position:fixed;
 	bottom: -200px;
-	border-top: 2px solid black;
-	opacity: 0;
+	border-top: 3px solid black;
+	opacity: 1;
 }
 
 .hidden-content {
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
 	display:none;
 	font-family: Dosis;
 	font-size: 20px;
-	margin-bottom:100px;
+	margin-bottom:83px;
+	background: linear-gradient(white, #D3F0FF);
 }
 
 .image {
 	text-align: center;
+}
+
+#menu {
+	border-bottom: 3px solid #003399; 
 }
 
 #menu ul {

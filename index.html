@@ -25,7 +25,7 @@
 			</div>
 		</div>
 
-		<div id="menu" class="medium">
+		<div id="menu" class="medium heading">
 			<ul>
 				<li class="heading" id="bio-heading" onclick="navigate('#bio')">Bio</li> 	<span class="heading">&#9679;</span>
 				<li class="heading" id="web-heading" onclick="navigate('#web')">Web and Software Development</li> <span class="heading">&#9679;</span>
@@ -33,28 +33,37 @@
 				<li class="heading" id="games-heading" onclick="navigate('#games')">Games and Puzzles</li> <span class="heading">&#9679;</span>
 				<li><a class="heading" id="resume-heading" href="resume.pdf">Resume</a></li> <span class="heading">&#9679;</span>
 				<li class="heading" id="contact-heading" onclick="navigate('#contact')">Contact</li>
-			</ul><span class="center heading">__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</span>
+			</ul>
 		</div>
 
 		<div id="content-container">
 			<div class="name hidden-content" id="bio">
-
-				<div class="image"><img src="BenPall2.png" id="me" alt="Me at the Western Wall."></div><br/>
-				<p>My name is Ben Pall. I am a third year undergraduate student at Tufts University studying Engineering Psychology and Computer Science. I have a passion for making ideas understandable through technology, and making technology understandable through ideas. I enjoy classic rock, stand-up comedy, New York City, and spicy food. I also hold the record for youngest modern New York Times crossword writer.
+				<h1>About Me</h1>
+				<div class="odd project">
+					<div class="image"><img src="BenPall2.png" id="me" alt="Me at the Western Wall."></div><br/>
+					<div class="blurb"><p>My name is Ben Pall. I am a third-year undergraduate student at Tufts University studying Engineering Psychology and Computer Science. I have a passion for making ideas understandable through technology, and making technology understandable through ideas. I enjoy classic rock, stand-up comedy, New York City, and spicy food. I also hold the record for youngest modern New York Times crossword writer.</p></div>
+				</div>
 			</div>
 			<div class="hidden-content" id="web">
 				<h1>Web and Software Development</h1>
 				<p align="center"><span class="reflective">I have nurtured a passion for software since I began using my first computer. At Tufts, I have taken several computer science courses, including <strong>Data Structures</strong> and <strong>Algorithms</strong>, that I have used to solve problems with software. Here are some recent courses I have taken and projects I have worked on.</span></p><br/>
 
-				<div class="odd project">
-					<h3>Web Development Class - Tufts University</h3><br/>
-					<p><div class="imgcont"><img src="ming.jpg" id="ming" class="itemimg"/></div>
-					<div class="blurb">
+				<div class="first odd project">
+					<h2>Web Development Class - Tufts University</h2><br/>
+					<div class="imgcont"><a href="https://github.com/pallpointben/comp20-bpall"><img src="ming.jpg" id="ming" class="itemimg"/></a></div>
+					<p><div class="blurb">
 						In the Fall of 2015, I took a web development course at Tufts with Professor Ming Chow. I built several small- to medium-sized projects using <strong>HTML, CSS, JavaScript, JQuery, node.js + express,</strong> and other web development tools. I included a Google Maps-based chat service and a music mashup creation tool as some of my largest undertakings. Check out <a href="https://github.com/pallpointben/comp20-bpall">my GitHub repository from this class</a> to learn more about what I discovered and built.
 					</div></p>
 				</div>
 				<div class="even project">
-					<h3>More</h3><br/>
+					<h2>MapChat</h2><br/>
+					<div class="imgcont"><a href="http://pallpointben.github.io/comp20-bpall/mapchat/index.html"><img src="mapchat.png" id="mapchat" class="itemimg center"/></a></div>
+					<p><div class="blurb">
+						<a href="http://pallpointben.github.io/comp20-bpall/mapchat/index.html">MapChat</a> is a map-based checkin service I built using node.js + express and the Google Maps API. Visitors who opt to give the service their location will be added to the interactive map with a message.
+					</div></p>
+				</div>
+				<div class="odd project">
+					<h2>More</h2><br/>
 					<p><div class="imgcont"><img src="pocketwatch.jpg" id="watch" class="itemimg"/></div>
 					<div class="blurb">
 						More coming soon.
@@ -65,18 +74,18 @@
 				<h1>Human-Computer Interaction</h1>
 				<p align="center"><span class="reflective">I am fascinated with the idea of reducing the communication gap between the creative human mind and the powerful computer processor. Below you'll find some of my efforts to make computers intuitive to humans.</span></p><br/>
 
-				<div class="odd project">
-					<h3>Yeti</h3><br/>
+				<div class="first odd project">
+					<h2>Yeti</h2><br/>
 					<p><div class="pdfcont">
-						<iframe src="yeti-prototype.pdf" style="width: 325px; height: 600px; overflow: hidden;" scrolling="no"></div>
-				        <p>Your web browser doesn't support iframes.</p>
-				   		</iframe></div>
 					<div class="blurb">
 						I worked with a team of students as User Experience Coordinator to reimagine Yeti, an app that helps users find entertainment near them on short notice. In this role, I was in charge of designing the app's user interface. I produced interactive PDF prototypes of some interface designs for user testing. (At left, you'll find one of the prototypes I created. It will work in your browser.) I also guided my team through the user testing process; I created a survey form for team members to walk through with test subjects.
 					</div></p>
+					<iframe src="yeti-prototype.pdf" style="width: 325px; height: 600px; overflow: hidden;" scrolling="no"></div>
+			        <p>Your web browser doesn't support iframes.</p>
+			   		</iframe></div>
 				</div>
 				<div class="odd project">
-					<h3>More</h3><br/>
+					<h2>More</h2><br/>
 					<p><div class="imgcont"><img src="pocketwatch.jpg" id="watch" class="itemimg"/></div>
 					<div class="blurb">
 						More coming soon.
@@ -85,19 +94,27 @@
 			</div>
 			<div class="hidden-content" id="games">
 				<h1>Game and Puzzle Design</h1>
-				<div class="odd project">
-					<h3>More</h3><br/>
+				<div class="first odd project">
+					<h2>Crossword Puzzle Design</h2><br/>
+					<div class="imgcont"><a href="http://www.xwordinfo.com/Thumbs?author=Ben+Pall"><img src="crossword.png" id="crossword" class="itemimg center"/></a></div>
+					<p><div class="blurb">
+						I have written and designed crossword puzzles for eight years. My puzzles have been featured in major publications such as <a href="http://www.xwordinfo.com/Thumbs?author=Ben+Pall">The New York Times</a> and <a href="http://www.buzzfeed.com/calebmadison/if-want-to-get-hazed-by-famous-figure-puzzles">BuzzFeed</a>.
+					</div></p>
+				</div>
+				<div class="even project">
+					<h2>More</h2><br/>
 					<p><div class="imgcont"><img src="pocketwatch.jpg" id="watch" class="itemimg"/></div>
 					<div class="blurb">
 						More coming soon.
 					</div></p>
 				</div>
+				</div>
 			</div>
 			<div class="hidden-content" id="contact">
 				<h1>Contact Me</h1>
-				<div class="odd project">
-					<p><h3>Email</h3>
-					pallpointben AT gmail DOT com</p>
+				<div class="first odd project">
+					<p><h2>Email</h2>
+					<div class="blurb">pallpointben AT gmail DOT com</p></div>
 
 				</div>
 			</div>
@@ -117,7 +134,7 @@
 				<h1>Web and Software Development</h1>
 				<div class="skills ui-grid-a">
 					<div class="list ui-block-a">
-						<h3>Skills</h3>
+						<h2>Skills</h2>
 						<p class="center">
 							<ul>
 								<li>HTML5/CSS3/JavaScript</li>
@@ -126,7 +143,7 @@
 						</p>
 					</div>
 					<div class="list ui-block-b">
-						<h3>Skills</h3>
+						<h2>Skills</h2>
 						<p class="center">
 							<ul>
 								<li>HTML5/CSS3/JavaScript</li>

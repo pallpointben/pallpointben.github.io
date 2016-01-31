@@ -12,3 +12,11 @@ function navigate(section) {
 		$(section).css("display", "block").animate({opacity:1}, 600);
 	})
 }
+
+function blur(element) {
+	$(element).css("filter","blur(5px)").css("-webkit-filter", "blur(5px)");
+}
+
+function unblur(element) {
+	$(element).css("filter","blur(0)").css("-webkit-filter", "blur(0)");
+}
