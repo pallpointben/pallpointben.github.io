@@ -20,6 +20,7 @@ var entered = false;
 
 function enter() {
 	if (!entered) {
+		$("#circle-animation").css("-moz-transform", "scale(.2)");
 		$("#circle-animation").animate({zoom:.2}, 2000,
 			function() {
 				entered = true;

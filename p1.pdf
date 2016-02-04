@@ -1,0 +1,117 @@
+\documentclass[12pt]{article} 
+
+\usepackage[top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts}
+\usepackage{graphicx}
+
+
+\begin{document}  
+
+
+%   \pagestyle{empty}      %%% uncomment this to remove page numbers
+\pagestyle{plain}
+
+
+\begin{center} Some useful tex stuff 
+\end{center}
+
+\noindent {\bf Bold font}\\
+{\em emphasized text}\\
+
+
+
+
+
+\begin{enumerate}
+
+\item 
+	\begin{enumerate}
+
+	\item Let $f(x) = O(x)$ and $g(x) = O(x)$.  Let $c$ be a positive constant. \\   
+	Prove or disprove that  $f(x) + c\cdot g(y) = O(x+y)$. 
+
+	\item Let $f(n) = c_1\cdot \log_b n$, and let $g(n) = c_2\cdot \log_d n$.  \\
+	Prove that $f(n) = \Theta(g(n))$.
+
+	\item  Let $f(n) = \log n^{\Theta(1)}$, and let 	$g(n) = \Theta(\log n)$.   \\
+	Prove that $f(n) = \Theta(g(n))$. \\ 
+	\end{enumerate}
+
+Now, to prove all of the above.
+\begin{proof}
+No, not really, but here's a QED box.
+\end{proof}
+Here's another QED box, outside of the {\em proof environment}:  \qed 
+
+$\alpha \beta \gamma \delta \epsilon \zeta \eta \theta \iota \kappa \lambda \mu \nu \xi$o$\pi \rho \sigma \tau \upsilon \phi \chi \psi \omega$
+
+AB$\Gamma\Delta$EZH$\Theta$IK$\Lambda$MN$\Xi$O$\Pi$P$\Sigma$TY$\Phi$X$\Psi\Omega$
+
+I will now skip down 3cm.
+\vskip3cm
+
+\item  Prove or disprove that  $\sum^n_{x{=}1} (8x^2 - 4x + 60) = \Theta(n^3)$.\\
+
+
+ 
+ 
+\item  Express each of the following using $\Theta$-notation, if possible.  You can use any reasoning that you like, as long as it is convincing.   \\\\
+(a) $T(n) = T(\frac{57n}{73}) + \Theta(n^2)$ \\\\
+(b) $S(n) = 2\cdot S(\frac{10n}{9}) + \Theta(n)$\\
+
+Let's start a new page.
+\newpage
+
+
+\item Use the master method to evaluate the following two functions, if possible. \\\\
+(a) $P(n)=10\cdot P(\frac{n}{3}) + \Theta(n^2\log^5 n)$
+
+(b) $Q(n)=3\cdot Q(\frac{n}{2}) + \Theta(n^2)$\\
+
+
+
+\item (a) Use the substitution method to prove: \\ $T(n) = 18T(\frac{n}{3}) + \Theta(n^2)  = O(n^3)$.   \\
+(b) Is this  the best possible  upper bound for $T(n)$? \\
+
+
+ 
+ \item
+Let $S_1$ and $S_2$ be two sorted lists of numbers, with $n$ and $m$ elements respectively. Let $m\leq n$.
+State how to find all common elements in $S_1$ and $S_2$, 
+giving a time complexity $T(m,n)$ that is as efficient as possible, and sensitive to the relative sizes of $m, n$. 
+\end{enumerate}
+
+
+\vskip5cm
+
+\begin{itemize}
+\item Let me know what other symbols you'd like to see in this template.
+\item Your TAs will be happy if you type your homework
+\end{itemize}
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
