@@ -8,6 +8,8 @@
 .reflective {
 	font-style: italic;
 	margin: 20px;
+	width: 80%;
+	padding: 10px;
 }
 
 .odd {
