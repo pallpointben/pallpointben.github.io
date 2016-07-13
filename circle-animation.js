@@ -50,6 +50,7 @@ function init() {
 		ctx.translate(canvas.width/2, canvas.height*3/5);
 	}
 	spinTimer = setInterval(loop, 30);
+
 }
 
 function run() {

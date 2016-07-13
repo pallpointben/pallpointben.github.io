@@ -2,14 +2,15 @@
 	text-align: center;
 	padding: 15px;
 	top: 0px;
-	background: linear-gradient(#4DB7EB, white);
+	background: linear-gradient(#E1F5FE, white/*white*/);
 }
 
 .reflective {
 	font-style: italic;
 	margin: 20px;
-	width: 80%;
-	padding: 10px;
+	padding-left: 120px;
+	padding-right: 120px;
+	display: none;
 }
 
 .odd {
@@ -71,7 +72,8 @@
 
 .blurb {
 	text-align: left;
-	padding: 15px;
+	padding-left: 120px;
+	padding-right: 120px;
 }
 
 
@@ -159,23 +161,23 @@ h2 {
 	display: block;
 	text-align: center;
 	width: 100%;
-	background-color: #4DB7EB;
+	background-color: #EB814D;
 	padding: 15px;
 	color: white;
 	position:fixed;
 	bottom: -200px;
-	border-top: 3px solid black;
+	border-top: 0px solid black;
 	opacity: 1;
 }
 
 .hidden-content {
-	border-top: 5px solid black;
-	border-bottom: 5px solid black;
+	border-top: 0px solid black;
+	border-bottom: 0px solid black;
 	display:none;
 	font-family: Dosis;
 	font-size: 20px;
 	margin-bottom:83px;
-	background: linear-gradient(white, #D3F0FF);
+	background: linear-gradient(white, white/*#D3F0FF*/);
 }
 
 .image {
